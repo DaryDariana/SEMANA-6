@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora221115.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="txtResultado" HorizontalOptions="End" Text="0" FontSize="100" Grid.ColumnSpan="4" Grid.Column="0"></Label>
+
+        <Button Clicked="clickLimpiar" Text="CE" Grid.Column="0" Grid.Row="1" FontSize="50"></Button>
+        <Button Clicked="clickPorcentaje" Text="%" Grid.Column="1" Grid.Row="1" FontSize="50"></Button>
+        <Button Clicked="clickBorrar" Text="ER" Grid.Column="2" Grid.Row="1" FontSize="50"></Button>
+        <Button Clicked="clickMultiplicar" Text="*" Grid.Column="3" Grid.Row="1" FontSize="50"></Button>
+
+        <Button Clicked="clickNumero" Text="7" Grid.Column="0" Grid.Row="2" FontSize="50"></Button>
+        <Button Clicked="clickNumero" Text="8" Grid.Column="1" Grid.Row="2" FontSize="50"></Button>
+        <Button Clicked="clickNumero" Text="9" Grid.Column="2" Grid.Row="2" FontSize="50"></Button>
+        <Button Clicked="clickSuma" Text="+" Grid.Column="3" Grid.Row="2" FontSize="50"></Button>
+
+        <Button Clicked="clickNumero" Text="4" Grid.Column="0" Grid.Row="3" FontSize="50"></Button>
+        <Button Clicked="clickNumero" Text="5" Grid.Column="1" Grid.Row="3" FontSize="50"></Button>
+        <Button Clicked="clickNumero" Text="6" Grid.Column="2" Grid.Row="3" FontSize="50"></Button>
+        <Button Clicked="clickResta" Text="-" Grid.Column="3" Grid.Row="3" FontSize="50"></Button>
+
+        <Button Clicked="clickNumero" Text="1" Grid.Column="0" Grid.Row="4" FontSize="50"></Button>
+        <Button Clicked="clickNumero" Text="2" Grid.Column="1" Grid.Row="4" FontSize="50"></Button>
+        <Button Clicked="clickNumero" Text="3" Grid.Column="2" Grid.Row="4" FontSize="50"></Button>
+        <Button Clicked="clickDividir" Text="/" Grid.Column="3" Grid.Row="4" FontSize="50"></Button>
+
+        <Button Clicked="clickNumero" Text="0" Grid.Column="0" Grid.Row="5" FontSize="50"></Button>
+        <Button Clicked="clickNumero" Text="," Grid.Column="1" Grid.Row="5" FontSize="50"></Button>
+        <Button Clicked="clickIgual" Text="=" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" FontSize="50"></Button>
+
+
+
+
+
+
+    </Grid>
+
+</ContentPage>
